@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFrag">
+
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.apsan.quizbyap.frags.HomeFrag"
+        android:label="HomeFrag" >
+        <action
+            android:id="@+id/action_homeFrag_to_categoryFrag"
+            app:destination="@id/categoryFrag" />
+        <action
+            android:id="@+id/action_homeFrag_to_scoresFrag"
+            app:destination="@id/scoresFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFrag"
+        android:name="com.apsan.quizbyap.frags.CategoryFrag"
+        android:label="CategoryFrag" >
+        <action
+            android:id="@+id/action_categoryFrag_to_questionFrag"
+            app:destination="@id/questionFrag" />
+        <action
+            android:id="@+id/action_categoryFrag_to_homeFrag"
+            app:destination="@id/homeFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoresFrag"
+        android:name="com.apsan.quizbyap.frags.ScoresFrag"
+        android:label="ScoresFrag" />
+    <fragment
+        android:id="@+id/questionFrag"
+        android:name="com.apsan.quizbyap.frags.QuestionFrag"
+        android:label="QuestionFrag" >
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="difficulty"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_questionFrag_to_resultFrag"
+            app:destination="@id/resultFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFrag"
+        android:name="com.apsan.quizbyap.frags.ResultFrag"
+        android:label="ResultFrag" >
+        <action
+            android:id="@+id/action_resultFrag_to_categoryFrag"
+            app:destination="@id/categoryFrag" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <argument
+            android:name="difficulty"
+            app:argType="string" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+</navigation>

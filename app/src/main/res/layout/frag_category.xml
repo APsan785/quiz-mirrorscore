@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/category_bg">
+
+    <ProgressBar
+        android:elevation="20dp"
+        android:visibility="invisible"
+        android:layout_marginTop="90dp"
+        android:id="@+id/choose_categ_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/category_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    <com.skydoves.powerspinner.PowerSpinnerView-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#3993A8"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Category"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textSize="23sp"-->
+<!--        app:spinner_arrow_gravity="end"-->
+<!--        app:spinner_arrow_padding="8dp"-->
+<!--        app:spinner_divider_color="@color/white"-->
+<!--        app:spinner_divider_show="true"-->
+<!--        app:spinner_divider_size="0.4dp"-->
+<!--        app:spinner_item_height="46dp"-->
+<!--        app:spinner_popup_animation="dropdown"-->
+<!--        app:spinner_popup_background="#1D9148"-->
+<!--        app:spinner_popup_elevation="14dp"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--android:id="@+id/category_spinner"-->
+<!--        />-->
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/categorytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Choose Category:"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/category_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    <com.skydoves.powerspinner.PowerSpinnerView-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#1295B3"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Difficulty"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textSize="23sp"-->
+<!--        app:spinner_arrow_gravity="end"-->
+<!--        app:spinner_arrow_padding="8dp"-->
+<!--        app:spinner_divider_color="@color/white"-->
+<!--        app:spinner_divider_show="true"-->
+<!--        app:spinner_divider_size="0.4dp"-->
+<!--        app:spinner_item_height="46dp"-->
+<!--        app:spinner_popup_animation="dropdown"-->
+<!--        app:spinner_popup_background="#27DA69"-->
+<!--        app:spinner_popup_elevation="14dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/category_spinner"-->
+<!--        android:id="@+id/difficulty_spinner"-->
+<!--        />-->
+
+
+    <Spinner
+        android:id="@+id/difficulty_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_spinner"
+        />
+
+    <TextView
+        android:id="@+id/difficultytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Choose Difficulty:"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/difficulty_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:backgroundTint="#8BEAB5"
+        android:textColor="#01030B"
+        android:id="@+id/btn_start_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="START QUIZ"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_spinner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

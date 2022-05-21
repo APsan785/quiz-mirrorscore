@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FF9D"
+    tools:background="#DDB4BA"
+    android:id="@+id/scroll_main"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:id="@+id/q_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            tools:text="1." />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:textSize="28sp"
+            tools:text="General Knowledge" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q_no"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/tv_bg"
+            android:padding="11dp"
+            android:paddingRight="30dp"
+            android:textSize="24sp"
+            tools:text="WHO IS INDIA'S FIRST PRESIDENT ?" />
+
+        <RelativeLayout
+            android:id="@+id/options_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/op1"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="Option 1" />
+
+            <Button
+                android:id="@+id/op2"
+
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op1"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                tools:text="Option 2" />
+
+            <Button
+                android:id="@+id/op3"
+
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op2"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                tools:text="Option 3" />
+
+            <Button
+                android:id="@+id/op4"
+
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/op3"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                tools:text="Option 4" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/score_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/options_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/tv_bg"
+            android:padding="12dp"
+            android:textSize="45sp"
+            tools:text="Score : 8" />
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#417C0C"
+            android:text="Continue"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginBottom="40dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
